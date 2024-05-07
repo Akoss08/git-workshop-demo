@@ -53,7 +53,10 @@ const dogs = [
   
 
 function main(sortBy) {
-    console.log('sortBy:', sortBy)
+  if (sortBy === 'age') {
+    const dogsInOrder = dogs.sort((a, b) => parseInt(a.age) - parseInt(b.age)) 
+    console.log(dogsInOrder.map(dog => dog.name))
+  }
 
 }
 
