@@ -52,7 +52,7 @@ const dogs = [
 function main(sortBy) {
   const dogsName = dogs.map((dog) => dog.name);
   const sortedDogs = dogsName.sort();
-  console.log(`sorted dog's name by ${sortBy}: ${sortedDogs}`);
+  console.log(`sorted dog's ${sortBy}: ${sortedDogs}`);
 }
 
 main(process.argv[2]);
