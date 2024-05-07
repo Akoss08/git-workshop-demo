@@ -9,10 +9,18 @@
 // Execute: node.js calling-a-cat.js Hungarian
 
 function main(language) {
-  console.log('language:', language)
-  // The language variable will be the language from the command line. 
-
+  if (language === 'Hungarian') {
+    console.log('cicc-cicc');
+  } else if (language === 'Chinese') {
+    console.log('miao-maio');
+  } else if (language === 'Tunisian') {
+    console.log('besh-besh');
+  } else if (language === 'Japanese') {
+    console.log('neko chan oide');
+  } else {
+    console.log('kitty-kitty');
+  }
+  // The language variable will be the language from the command line.
 }
 
-main(process.argv[2])
-
+main(process.argv[2]);
