@@ -50,9 +50,17 @@ const dogs = [
 ];
 
 function main(sortBy) {
-  const dogsName = dogs.map((dog) => dog.name);
-  const sortedDogs = dogsName.sort();
-  console.log(`sorted dog's ${sortBy}: ${sortedDogs}`);
+  if (sortBy === 'name'){
+    const dogsName = dogs.map((dog) => dog.name);
+    const sortedDogs = dogsName.sort();
+    console.log(`sorted dog's ${sortBy}: ${sortedDogs}`);
+
+  }
+  if (sortBy === 'age') {
+    const dogsInOrder = dogs.sort((a, b) => parseInt(a.age) - parseInt(b.age)) 
+    console.log(dogsInOrder.map(dog => dog.name))
+  }
+
 }
 
 main(process.argv[2]);
