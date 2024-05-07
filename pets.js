@@ -16,6 +16,7 @@ function displayCats() {
 
 function main() {
     displayCats();
+    console.log('Here is you rat 🐀 -_-');
 }
 
 main()
