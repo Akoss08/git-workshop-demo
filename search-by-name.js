@@ -12,7 +12,9 @@
 const catNames = ['Cirmi', 'Cirmos', 'Vakarcs', 'Butyok', 'Bubu']
 
 function main(keyword) {
-    console.log('keyword:', keyword)
+    if(catNames.includes(keyword)){
+        console.log('keyword:', keyword)
+    }
     // Tip: string.prototype.includes()
 }
 
