@@ -1,5 +1,4 @@
-
-// Task 1: Sort the given dogs by their name. Output their names 
+// Task 1: Sort the given dogs by their name. Output their names
 //  by ascending alphabetical order of their name.
 
 // Execute:  node sort-by.js name
@@ -11,7 +10,7 @@
 //    Charlie
 //    ...
 
-// Task 2: Sort the given dogs by their age. Output their names 
+// Task 2: Sort the given dogs by their age. Output their names
 //  by an ascending order of their age.
 
 // Execute: node sort-by.js age
@@ -23,39 +22,37 @@
 //    Buddy
 //    ...
 
-
 const dogs = [
   {
-    "name": "Buddy",
-    "age": 3
+    name: 'Buddy',
+    age: 3,
   },
   {
-    "name": "Max",
-    "age": 7
+    name: 'Max',
+    age: 7,
   },
   {
-    "name": "Bailey",
-    "age": 2
+    name: 'Bailey',
+    age: 2,
   },
   {
-    "name": "Charlie",
-    "age": 5
+    name: 'Charlie',
+    age: 5,
   },
   {
-    "name": "Lucy",
-    "age": 4
+    name: 'Lucy',
+    age: 4,
   },
   {
-    "name": "Daisy",
-    "age": 1
-  }
-]
-  
+    name: 'Daisy',
+    age: 1,
+  },
+];
 
 function main(sortBy) {
-    console.log('sortBy:', sortBy)
-
+  const dogsName = dogs.map((dog) => dog.name);
+  const sortedDogs = dogsName.sort();
+  console.log(`sorted dog's ${sortBy}: ${sortedDogs}`);
 }
 
-main(process.argv[2])
-
+main(process.argv[2]);
