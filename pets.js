@@ -10,7 +10,13 @@
 
 const pets = ['Cat', 'Dog', 'Hamster', 'Guinea Pig', 'Salmon']
 
+function displayCats() {
+    pets.forEach((pet, index) => console.log(`${index + 1}. ${pet}`));
+} 
+
 function main() {
+    displayCats();
+    console.log('Here is you rat 🐀 -_-');
 }
 
 main()
